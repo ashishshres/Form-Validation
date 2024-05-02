@@ -149,3 +149,7 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
     validate();
 });
+
+document.addEventListener("load", () => {
+    location.reload();
+});
