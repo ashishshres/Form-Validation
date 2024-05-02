@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create Account</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./scripts/script.js" defer></script>
+
+</head>
+
+<body class="bg-zinc-900 text-white h-full w-full p-4 flex items-center justify-center">
+    <div class="w-[400px]">
+        <h1 class="text-4xl mb-3 font-medium">Create Account</h1>
+        <form class="flex flex-col gap-2">
+            <label for="username">Username*</label>
+            <input type="text" id="username" placeholder="Username"
+                class="bg-zinc-800 p-2 rounded-md border border-transparent border-solid border-1">
+            <label for="email">Email*</label>
+            <input type="email" id="email" placeholder="Email"
+                class="bg-zinc-800 p-2 rounded-md border border-transparent border-solid border-1">
+            <label for="password">Password*</label>
+            <input type="password" id="pass" placeholder="Password"
+                class="bg-zinc-800 p-2 rounded-md border border-transparent border-solid border-1">
+            <label for="password">Confirm Password*</label>
+            <input type="password" id="confirm" placeholder="Retype Password"
+                class="bg-zinc-800 p-2 rounded-md border border-transparent border-solid border-1">
+            <span class="flex gap-1"><input type="checkbox" id="show"><label for="show">Show
+                    Password</label></span>
+            <button type="submit" id="submit" class="bg-blue-700 hover:bg-blue-600 mt-3 p-2 rounded-md">Create
+                Account</button>
+        </form>
+    </div>
+    <div
+        class="alert rounded-md px-4 py-3 text-[#222] font-bold fixed right-0 top-0 m-5 translate-x-full transition ease-in-out duration-[0.25s]">
+    </div>
+</body>
+
+</html>
