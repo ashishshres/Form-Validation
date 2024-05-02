@@ -21,10 +21,10 @@ function showPassword() {
 
 // check for empty fields
 function isEmpty() {
-    username.style.border = "1px transparent";
-    email.style.border = "1px transparent";
-    password.style.border = "1px transparent";
-    confirmPassword.style.border = "1px transparent";
+    username.style.border = "1px solid transparent";
+    email.style.border = "1px solid transparent";
+    password.style.border = "1px solid transparent";
+    confirmPassword.style.border = "1px solid transparent";
 
     if (
         username.value == "" &&
@@ -50,10 +50,10 @@ function isEmpty() {
         toast("salmon", "Empty fields");
         confirmPassword.style.border = "1px solid salmon";
     } else {
-        username.style.border = "1px transparent";
-        email.style.border = "1px transparent";
-        password.style.border = "1px transparent";
-        confirmPassword.style.border = "1px transparent";
+        username.style.border = "1px solid transparent";
+        email.style.border = "1px solid transparent";
+        password.style.border = "1px solid transparent";
+        confirmPassword.style.border = "1px solid transparent";
         return true;
     }
 }
