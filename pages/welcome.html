@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create Account</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-zinc-900 text-white h-full w-full p-4 flex items-center justify-center flex-col">
+    <div class="welcome text-4xl"></div>
+    <script>
+        let welcomeMsg = document.querySelector(".welcome");
+        let username = localStorage.getItem("username");
+        welcomeMsg.innerHTML = `<h1>Hello, ${username}👋</h1>`;
+    </script>
+</body>
+
+</html>
